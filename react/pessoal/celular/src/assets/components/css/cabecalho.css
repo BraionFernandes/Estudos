@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fonte-primaria: "Montserrat", sans-serif;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    background-color: #000;
+}
+    .cabecalho-criador-link{
+        font-family: var(--fonte-primaria);
+        font-weight: bold;
+        font-size: 1.2em;
+        text-decoration: none;
+        color: #fff;
+        transition: 0.5s;
+    }
+        .cabecalho-criador-link:hover{
+            color: #ffffff94;
+        }
+    .cabecalho-projeto-nome{
+        font-family: var(--fonte-primaria);
+        font-weight: bolder;
+        font-size: 2em;
+        color: #fff;
+    }
+    .cabecalho-nav{
+        display: flex;
+        align-items: center;
+    }
+        .cabecalho-nav-item{
+            font-family: var(--fonte-primaria);
+            font-weight: bold;
+            font-size: 1em;
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+            padding: 5px;
+            position: relative;
+            transition: 0.8s;
+        }
+            .cabecalho-nav-item:hover{
+                color: #ffffffa4;
+            }
+            .cabecalho-nav-item::after{
+                content: " ";
+                width: 0%;
+                height: 4px;
+                background-color: #fff;
+                position: absolute;
+                border-radius: 20px;
+                bottom: -5px;
+                left: 0;
+                transition: 0.8s ease-in-out;
+            }
+                .cabecalho-nav-item:hover::after{
+                    background-color: #ffffffa4;
+                    width: 100%;
+                }

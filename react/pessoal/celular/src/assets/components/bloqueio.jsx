@@ -5,7 +5,11 @@ export default function Bloqueio() {
 
   return (
     <>
-      
+      <div className='bloqueio'>
+        <main>
+          
+        </main>
+      </div>
     </>
   )
 }
