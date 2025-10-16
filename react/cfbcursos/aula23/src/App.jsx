@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <Carro/>
+      <Carro fator={1}/>
     </>
   )
 }
