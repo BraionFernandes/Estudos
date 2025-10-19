@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fonte-primaria: "Montserrat", sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 92vh;
+}
+.definirSenha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000;
+    width: 400px;
+    height: 80%;
+    border-radius: 20px;
+    padding: 20px;
+}
+.definirSenha-text{
+    text-align: center;
+    padding: 5px;
+}
+.definirSenha-text-item{
+    font-family: var(--fonte-primaria);
+    font-weight: 500;
+    font-size: 1.4em;
+    color: #fff;
+}
+.definirSenha-senha{
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+}
+.definirSenha-senha-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 5px;
+}
+.definirSenha-senha-display i{
+    color: #fff;
+    margin: 0px 10px;
+}
+.definirSenha-senha-pin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 0;
+}
+.definirSenha-senha-pin-div-item{
+    padding: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.definirSenha-senha-pin-div-item:hover{
+    background-color: #ffffff98;
+}
+.definirSenha-definir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+    .definirSenha-definir-button{
+        font-family: var(--fonte-primaria);
+        font-size: 1em;
+        font-weight: 700;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .definirSenha-definir-button:hover{
+        background-color: #ffffffc7;
+    }
