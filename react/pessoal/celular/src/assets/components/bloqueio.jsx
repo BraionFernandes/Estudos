@@ -47,12 +47,11 @@ export default function Bloqueio() {
   }
 
   const numDigitado=(e)=>{
-    if(e){
-      const novaSenha=[...senhaDigitada, e];
-      setSenhaDigitada(novaSenha);
+        if(e && senhaDigitada.length < 6){
+            const novaSenha=[...senhaDigitada, e];
+            setSenhaDigitada(novaSenha);
+        }
     }
-    
-  }
 
   return (
     <>
@@ -66,12 +65,12 @@ export default function Bloqueio() {
           </div>
           <div className='bloqueio-senha'>
             <div className='bloqueio-senha-display'>
-              <i className="ri-circle-line"></i>
-              <i className="ri-circle-line"></i>
-              <i className="ri-circle-line"></i>
-              <i className="ri-circle-line"></i>
-              <i className="ri-circle-line"></i>
-              <i className="ri-circle-line"></i>
+              <i className={senhaDigitada.length>=1?'ri-circle-fill':'ri-circle-line'}></i>
+              <i className={senhaDigitada.length>=2?'ri-circle-fill':'ri-circle-line'}></i>
+              <i className={senhaDigitada.length>=3?'ri-circle-fill':'ri-circle-line'}></i>
+              <i className={senhaDigitada.length>=4?'ri-circle-fill':'ri-circle-line'}></i>
+              <i className={senhaDigitada.length>=5?'ri-circle-fill':'ri-circle-line'}></i>
+              <i className={senhaDigitada.length>=6?'ri-circle-fill':'ri-circle-line'}></i>
             </div>
             <div className='bloqueio-senha-pin'>
               <div className='bloqueio-senha-pin-div'>

@@ -6,10 +6,13 @@ import Senha from './assets/components/senha'
 
 function App() {
 
+  const [senhaDefinida,setSenhaDefinida]=useState([]);
+
   return (
     <>
       <Cabecalho/>
-      <Senha/>
+      {/* {senhaDefinida.length==6?<Bloqueio/>:<Senha senhaDefinida={senhaDefinida} setSenhaDefinida={setSenhaDefinida}/>} */}
+      <Bloqueio/>
     </>
   )
 }

@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react'
 import './css/senha.css'
 
-export default function Senha() {
+export default function Senha(props) {
 
-    const [senhaDefinida,setSenhaDefinida]=useState([]);
     const [senhaDigitada,setSenhaDigitada]=useState([]);
 
     const numDigitado=(e)=>{
@@ -13,11 +12,11 @@ export default function Senha() {
         }
     }
     const definirSenha=()=>{
-        if(senhaDefinida.length == 0 && senhaDigitada.length == 6){
-            setSenhaDefinida(senhaDigitada);
+        if(props.senhaDefinida.length == 0 && senhaDigitada.length == 6){
+            props.setSenhaDefinida(senhaDigitada);
         }
-        if(senhaDefinida.length == 6){
-            console.log(senhaDefinida);
+        if(props.senhaDefinida.length == 6){
+            console.log(props.senhaDefinida);
         }
     }
 
@@ -30,12 +29,12 @@ export default function Senha() {
                     </div>
                     <div className='definirSenha-senha'>
                         <div className='definirSenha-senha-display'>
-                            <i className="ri-circle-line"></i>
-                            <i className="ri-circle-line"></i>
-                            <i className="ri-circle-line"></i>
-                            <i className="ri-circle-line"></i>
-                            <i className="ri-circle-line"></i>
-                            <i className="ri-circle-line"></i>
+                            <i className={senhaDigitada.length>=1?'ri-circle-fill':'ri-circle-line'}></i>
+                            <i className={senhaDigitada.length>=2?'ri-circle-fill':'ri-circle-line'}></i>
+                            <i className={senhaDigitada.length>=3?'ri-circle-fill':'ri-circle-line'}></i>
+                            <i className={senhaDigitada.length>=4?'ri-circle-fill':'ri-circle-line'}></i>
+                            <i className={senhaDigitada.length>=5?'ri-circle-fill':'ri-circle-line'}></i>
+                            <i className={senhaDigitada.length>=6?'ri-circle-fill':'ri-circle-line'}></i>
                         </div>
                         <div className='definirSenha-senha-pin'>
                             <div className='definirSenha-senha-pin-div'>
