@@ -5,23 +5,11 @@
     --fonte-primaria: "Montserrat", sans-serif;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 92vh;
-}
 .definirSenha{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #000;
-    width: 400px;
-    height: 80%;
-    border-radius: 20px;
-    padding: 20px;
 }
 .definirSenha-text{
     text-align: center;

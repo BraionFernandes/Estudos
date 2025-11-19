@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './css/bloqueio.css'
+import '../../App.css'
 
 export default function Bloqueio() {
 
@@ -56,45 +57,47 @@ export default function Bloqueio() {
   return (
     <>
       <div className='container'>
-        <div className='bloqueio'>
-          <div className='bloqueio-text'>
-            <span className='bloqueio-text-item'>Insira o PIN para desbloquear</span>
-          </div>
-          <div className='bloqueio-time'>
-            <span className='bloqueio-time-display'>{hora}:{exibirMin()}</span>
-          </div>
-          <div className='bloqueio-senha'>
-            <div className='bloqueio-senha-display'>
-              <i className={senhaDigitada.length>=1?'ri-circle-fill':'ri-circle-line'}></i>
-              <i className={senhaDigitada.length>=2?'ri-circle-fill':'ri-circle-line'}></i>
-              <i className={senhaDigitada.length>=3?'ri-circle-fill':'ri-circle-line'}></i>
-              <i className={senhaDigitada.length>=4?'ri-circle-fill':'ri-circle-line'}></i>
-              <i className={senhaDigitada.length>=5?'ri-circle-fill':'ri-circle-line'}></i>
-              <i className={senhaDigitada.length>=6?'ri-circle-fill':'ri-circle-line'}></i>
+        <div className='celular'>
+          <div className='bloqueio'>
+            <div className='bloqueio-text'>
+              <span className='bloqueio-text-item'>Insira o PIN para desbloquear</span>
             </div>
-            <div className='bloqueio-senha-pin'>
-              <div className='bloqueio-senha-pin-div'>
-                <button className='bloqueio-senha-pin-div-item' onClick={(e)=>numDigitado(e.target.innerHTML)}>1</button>
-                <button className='bloqueio-senha-pin-div-item' onClick={(e)=>numDigitado(e.target.innerHTML)}>2</button>
-                <button className='bloqueio-senha-pin-div-item' onClick={(e)=>numDigitado(e.target.innerHTML)}>3</button>
+            <div className='bloqueio-time'>
+              <span className='bloqueio-time-display'>{hora}:{exibirMin()}</span>
+            </div>
+            <div className='bloqueio-senha'>
+              <div className='bloqueio-senha-display'>
+                <i className={senhaDigitada.length>=1?'ri-circle-fill':'ri-circle-line'}></i>
+                <i className={senhaDigitada.length>=2?'ri-circle-fill':'ri-circle-line'}></i>
+                <i className={senhaDigitada.length>=3?'ri-circle-fill':'ri-circle-line'}></i>
+                <i className={senhaDigitada.length>=4?'ri-circle-fill':'ri-circle-line'}></i>
+                <i className={senhaDigitada.length>=5?'ri-circle-fill':'ri-circle-line'}></i>
+                <i className={senhaDigitada.length>=6?'ri-circle-fill':'ri-circle-line'}></i>
               </div>
-              <div className='bloqueio-senha-pin-div'>
-                <button className='bloqueio-senha-pin-div-item' onClick={(e)=>numDigitado(e.target.innerHTML)}>4</button>
-                <button className='bloqueio-senha-pin-div-item' onClick={(e)=>numDigitado(e.target.innerHTML)}>5</button>
-                <button className='bloqueio-senha-pin-div-item' onClick={(e)=>numDigitado(e.target.innerHTML)}>6</button>
-              </div>
-              <div className='bloqueio-senha-pin-div'>
-                <button className='bloqueio-senha-pin-div-item' onClick={(e)=>numDigitado(e.target.innerHTML)}>7</button>
-                <button className='bloqueio-senha-pin-div-item' onClick={(e)=>numDigitado(e.target.innerHTML)}>8</button>
-                <button className='bloqueio-senha-pin-div-item' onClick={(e)=>numDigitado(e.target.innerHTML)}>9</button>
-              </div>
-              <div className='bloqueio-senha-pin-div'>
-                <button className='bloqueio-senha-pin-div-item' onClick={(e)=>numDigitado(e.target.innerHTML)}>0</button>
+              <div className='bloqueio-senha-pin'>
+                <div className='bloqueio-senha-pin-div'>
+                  <button className='bloqueio-senha-pin-div-item' onClick={(e)=>numDigitado(e.target.innerHTML)}>1</button>
+                  <button className='bloqueio-senha-pin-div-item' onClick={(e)=>numDigitado(e.target.innerHTML)}>2</button>
+                  <button className='bloqueio-senha-pin-div-item' onClick={(e)=>numDigitado(e.target.innerHTML)}>3</button>
+                </div>
+                <div className='bloqueio-senha-pin-div'>
+                  <button className='bloqueio-senha-pin-div-item' onClick={(e)=>numDigitado(e.target.innerHTML)}>4</button>
+                  <button className='bloqueio-senha-pin-div-item' onClick={(e)=>numDigitado(e.target.innerHTML)}>5</button>
+                  <button className='bloqueio-senha-pin-div-item' onClick={(e)=>numDigitado(e.target.innerHTML)}>6</button>
+                </div>
+                <div className='bloqueio-senha-pin-div'>
+                  <button className='bloqueio-senha-pin-div-item' onClick={(e)=>numDigitado(e.target.innerHTML)}>7</button>
+                  <button className='bloqueio-senha-pin-div-item' onClick={(e)=>numDigitado(e.target.innerHTML)}>8</button>
+                  <button className='bloqueio-senha-pin-div-item' onClick={(e)=>numDigitado(e.target.innerHTML)}>9</button>
+                </div>
+                <div className='bloqueio-senha-pin-div'>
+                  <button className='bloqueio-senha-pin-div-item' onClick={(e)=>numDigitado(e.target.innerHTML)}>0</button>
+                </div>
               </div>
             </div>
-          </div>
-          <div className='bloqueio-ajuda'>
-            <button className='bloqueio-ajuda-button'>Redefinir senha</button>
+            <div className='bloqueio-ajuda'>
+              <button className='bloqueio-ajuda-button'>Redefinir senha</button>
+            </div>
           </div>
         </div>
       </div>

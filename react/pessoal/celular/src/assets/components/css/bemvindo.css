@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fonte-primaria: "Montserrat", sans-serif;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.welcome-text{
+    text-align: center;
+    padding: 5px;
+}
+.welcome-text-item{
+    font-family: var(--fonte-primaria);
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 800;
+}
+.welcome-lista{
+    padding: 20px;
+}
+.welcome-lista-text{
+    text-align: center;
+    padding: 10px;
+}
+.welcome-lista-text-item{
+    font-family: var(--fonte-primaria);
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.welcome-lista-elemento{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.welcome-lista-elemento-retornar, .welcome-lista-elemento-avancar{
+    color: #fff;
+    font-size: 5em;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+.welcome-lista-elemento-linguagens{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 15px;
+}
+.welcome-lista-elemento-linguagens-img{
+    width: 100px;
+
+}
