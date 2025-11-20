@@ -1,5 +1,7 @@
 import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
+
 import Cabecalho from './assets/components/cabecalho'
 import Bloqueio from './assets/components/bloqueio'
 import Senha from './assets/components/senha'
@@ -11,11 +13,16 @@ function App() {
 
   return (
     <>
-      <Cabecalho/>
+      {/* <Cabecalho/> */}
       {/* {senhaDefinida.length==6?<Bloqueio/>:<Senha senhaDefinida={senhaDefinida} setSenhaDefinida={setSenhaDefinida}/>} */}
       {/* <Bloqueio/> */}
-      <Bemvindo/>
+      {/* <Bemvindo/> */}
       {/* <Senha/> */}
+      <Routes>
+        <Route path='/' element={<Bemvindo/>}/>
+        <Route path='/Senha' element={<Senha/>}/>
+        <Route path='/Bloqueio' element={<Bloqueio/>}/>
+      </Routes>
     </>
   )
 }

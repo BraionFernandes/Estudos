@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import './css/bemvindo.css'
 import '../../App.css'
 
@@ -8,6 +9,7 @@ import jsIcon from '../img/js.png'
 import reactIcon from '../img/react.png'
 
 export default function Bemvindo(){
+    const navigate=useNavigate();
     
     const linguagens=[
         {nome: "html", img: htmlIcon, texto: "Html"},
@@ -42,6 +44,10 @@ export default function Bemvindo(){
         }
     }
 
+    const handlePage=()=>{
+        navigate(`/Senha`);
+    }
+
     return(
         <div className="container">
             <div className="celular">
@@ -63,7 +69,7 @@ export default function Bemvindo(){
                         </div>
                     </div>
                     <div className="welcome-continuar">
-                        <button className="welcome-continuar-button">Continuar</button>
+                        <button className="welcome-continuar-button" onClick={handlePage}>Continuar</button>
                     </div>
                     <div className="welcome-creditos">
                         <span className="welcome-creditos-text">Desenvolvedor: </span>
