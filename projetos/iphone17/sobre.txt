@@ -1,0 +1,8 @@
+Site para treinamento;
+
+Linguagens a ser treinadas:
+
+1# Html e Css;
+2# Javascript;
+3# React;
+4# Tailwind;
