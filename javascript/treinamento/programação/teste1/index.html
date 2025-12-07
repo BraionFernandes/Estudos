@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Teste 1</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<!-- Desafio 1: Crie duas variáveis (nome e idade) e exiba uma frase no console:
+"Olá, meu nome é X e eu tenho Y anos." -->
+
+<!-- Desafio 2: Peça um número (via prompt ou variável fixa) e verifique se ele é par ou ímpar. -->
+
+<body class="p-5">
+    <div class="p-3 m-5 bg-neutral-700 rounded-lg w-[300px]">
+        <label class="font-bold text-white" for="nome1">Nome:</label>
+        <input class="outline-none text-neutral-300" type="text" name="nome1" id="nome1" placeholder="Digite seu nome...">
+    </div>
+    <div class="p-3 m-5 bg-neutral-700 rounded-lg w-[300px]">
+        <label class="font-bold text-white" for="idade1">Idade:</label>
+        <input class="outline-none text-neutral-300" type="text" name="idade1" id="idade1" placeholder="Digite sua idade...">
+    </div>
+    <button class="w-[300px] p-3 m-5 rounded-lg bg-neutral-700 text-white font-bold text-xl cursor-pointer" onClick="btnConfirmar()">Confirmar</button>
+
+    <hr>
+
+    <div class="p-3 m-5 bg-neutral-700 rounded-lg w-[300px]">
+        <label class="font-bold text-white" for="numero1">Número:</label>
+        <input class="outline-none text-neutral-300" type="text" name="numero1" id="numero1" placeholder="Digite um número...">
+    </div>
+    <button class="w-[300px] p-3 m-5 rounded-lg bg-neutral-700 text-white font-bold text-xl cursor-pointer" onClick="btnNumero()">Analisar</button>
+    <script>
+        const nome1=document.getElementById('nome1');
+        const idade1=document.getElementById('idade1');
+
+        const btnConfirmar=()=>{
+            window.alert("Seu nome é: " + nome1.value + " e você tem " + idade1.value + " anos.")
+        };
+
+        const numero1=document.getElementById('numero1');
+
+        const btnNumero=()=>{
+            if(numero1.value % 2 === 0){
+                window.alert("O número: " + numero1.value + " e par.");
+            }else{
+                window.alert("O número: " + numero1.value + " e impar.");
+            }
+        }
+    </script>
+</body>
+</html>
