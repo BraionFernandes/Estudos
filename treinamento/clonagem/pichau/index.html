@@ -30,7 +30,7 @@
                 <img class="w-[200px]" src="https://www.pichau.com.br/logo-pichau-2021-dark.png" alt="">
             </div>
             <div class="flex bg-neutral-700 pl-3 rounded-md mx-5">
-                <input class="text-neutral-300 w-[700px]" type="text" placeholder="Oque você está procurando? Digite aqui...">
+                <input class="text-neutral-300 w-[700px] outline-0" type="text" placeholder="Oque você está procurando? Digite aqui...">
                 <div>
                     <button class="bg-red-700 p-3 rounded-tr-md rounded-br-md">
                         <i class="ri-search-line text-white text-xl cursor-pointer"></i>
@@ -46,7 +46,7 @@
                     <i class="ri-heart-2-fill p-1 text-3xl"></i>
                     <p>Favoritos</p>
                 </button>
-                <button class="flex px-3 items-center bg-green-600 p-2 text-white rounded-md mx-3">
+                <button class="flex px-3 items-center bg-green-600 p-2 text-white rounded-md mx-3 cursor-pointer transition duration-500 hover:bg-green-700">
                     <i class="ri-shopping-cart-2-fill px-2 py-1 text-4xl"></i>
                     <p class="font-bold uppercase p-2">Carrinho</p>
                 </button>
@@ -1209,37 +1209,37 @@
                 <p class="p-3 text-xl font-bold text-white uppercase">Links relacionados</p>
             </div>
             <div class="flex gap-5">
-                <a class="p-2 bg-neutral-600 rounded-4xl text-sm" href="#">
+                <a class="p-2 bg-neutral-600 rounded-4xl text-sm transition duration-500 hover:bg-neutral-700" href="#">
                     <p class="text-white">Montar pc</p>
                 </a>
-                <a class="p-2 bg-neutral-600 rounded-4xl text-sm" href="#">
+                <a class="p-2 bg-neutral-600 rounded-4xl text-sm transition duration-500 hover:bg-neutral-700" href="#">
                     <p class="text-white">Computador Gamer</p>
                 </a>
-                <a class="p-2 bg-neutral-600 rounded-4xl text-sm" href="#">
+                <a class="p-2 bg-neutral-600 rounded-4xl text-sm transition duration-500 hover:bg-neutral-700" href="#">
                     <p class="text-white">Openbox</p>
                 </a>
-                <a class="p-2 bg-neutral-600 rounded-4xl text-sm" href="#">
+                <a class="p-2 bg-neutral-600 rounded-4xl text-sm transition duration-500 hover:bg-neutral-700" href="#">
                     <p class="text-white">Pichau empresas</p>
                 </a>
-                <a class="p-2 bg-neutral-600 rounded-4xl text-sm" href="#">
+                <a class="p-2 bg-neutral-600 rounded-4xl text-sm transition duration-500 hover:bg-neutral-700" href="#">
                     <p class="text-white">hardware</p>
                 </a>
-                <a class="p-2 bg-neutral-600 rounded-4xl text-sm" href="#">
+                <a class="p-2 bg-neutral-600 rounded-4xl text-sm transition duration-500 hover:bg-neutral-700" href="#">
                     <p class="text-white">placas de video</p>
                 </a>
-                <a class="p-2 bg-neutral-600 rounded-4xl text-sm" href="#">
+                <a class="p-2 bg-neutral-600 rounded-4xl text-sm transition duration-500 hover:bg-neutral-700" href="#">
                     <p class="text-white px-2">ssd</p>
                 </a>
-                <a class="p-2 bg-neutral-600 rounded-4xl text-sm" href="#">
+                <a class="p-2 bg-neutral-600 rounded-4xl text-sm transition duration-500 hover:bg-neutral-700" href="#">
                     <p class="text-white">cadeira gamer</p>
                 </a>
-                <a class="p-2 bg-neutral-600 rounded-4xl text-sm" href="#">
+                <a class="p-2 bg-neutral-600 rounded-4xl text-sm transition duration-500 hover:bg-neutral-700" href="#">
                     <p class="text-white">energetico pichau</p>
                 </a>
-                <a class="p-2 bg-neutral-600 rounded-4xl text-sm" href="#">
+                <a class="p-2 bg-neutral-600 rounded-4xl text-sm transition duration-500 hover:bg-neutral-700" href="#">
                     <p class="text-white">video games</p>
                 </a>
-                <a class="p-2 bg-neutral-600 rounded-4xl text-sm" href="#">
+                <a class="p-2 bg-neutral-600 rounded-4xl text-sm transition duration-500 hover:bg-neutral-700" href="#">
                     <p class="text-white">monitor 27 polegadas</p>
                 </a>
             </div>
@@ -1304,36 +1304,44 @@
             </div>
         </div>
     </main>
-    <footer class="bg-neutral-900 p-5">
+    <footer class="bg-neutral-900 p-3">
         <div class="flex flex-col p-2 justify-center items-center">
-            <div class="flex">
-                <div class="flex bg-neutral-700 items-center px-10 py-2 rounded-lg">
-                    <div class="flex items-center">
-                        <i class="ri-time-line text-red-600 bg-white text-3xl rounded-full"></i>
+            <div class="flex gap-5">
+                <div class="flex bg-neutral-700 items-center px-10 py-3 rounded-lg gap-10">
+                    <div class="flex items-center gap-5">
+                        <div class="bg-white rounded-full">
+                            <i class="ri-time-line text-red-600 text-3xl bg-white rounded-full p-2"></i>
+                        </div>
                         <div>
-                            <p>Atendimento Loja Virtual</p>
-                            <p>Segunda a sexta <strong>8h às 12h</strong> e das <strong>14h às 18h</strong></p>
+                            <p class="text-white font-bold ">Atendimento Loja Virtual</p>
+                            <p class="text-white">Segunda a sexta <strong>8h às 12h</strong> e das <strong>14h às 18h</strong></p>
                         </div>
                     </div>
-                    <div>
-                        <i class="ri-phone-line"></i>
-                        <p>(47) 3305-5150</p>
+                    <div class="flex items-center gap-5">
+                        <div class="bg-white rounded-full">
+                            <i class="ri-phone-line text-red-600 text-3xl bg-white rounded-full p-2"></i>
+                        </div>
+                        <p class="text-white font-bold">(47) 3305-5150</p>
                     </div>
-                    <div>
-                        <i class="ri-mail-line"></i>
-                        <p>sac@pichau.com.br</p>
+                    <div class="flex items-center gap-5">
+                        <div class="bg-white rounded-full">
+                            <i class="ri-mail-line text-red-600 text-3xl bg-white rounded-full p-2"></i>
+                        </div>
+                        <p class="text-white font-bold">sac@pichau.com.br</p>
                     </div>
                 </div>
-                <div class="bg-neutral-700 items-center px-10 py-2 rounded-lg">
-                    <div>
-                        <i class="ri-home-4-line"></i>
-                        <p>Loja física em Joinville</p>
+                <div class="flex bg-neutral-700 items-center px-10 py-3 rounded-lg">
+                    <div class="flex items-center gap-5 w-45">
+                        <div class="bg-white rounded-full">
+                            <i class="ri-home-4-line text-red-600 text-3xl bg-white rounded-full p-2"></i>
+                        </div>
+                        <p class="text-white font-bold text-xl">Loja física em Joinville</p>
                     </div>
-                    <hr>
+                    <hr class="border h-[50px] mx-5 text-white">
                     <div>
-                        <p>(47) 3026-6446</p>
-                        <p>Segunda a sexta das 9h as 19h</p>
-                        <p>Sábado das 9h as 13h</p>
+                        <p class="text-white font-bold text-xl">(47) 3026-6446</p>
+                        <p class="text-white text-sm">Segunda a sexta das 9h as 19h</p>
+                        <p class="text-white text-sm">Sábado das 9h as 13h</p>
                     </div>
                 </div>
             </div>
@@ -1341,12 +1349,12 @@
                 <img src="https://media.pichau.com.br/media/aw_rbslider/slides/Pichau_Empresas_-_1450x140.png" alt="">
             </div>
         </div>
-        <div>
-            <div>
-                <div>
-                    <p>Departamentos</p>
-                    <hr>
-                    <ul>
+        <div class="flex gap-10 justify-around px-35 py-10">
+            <div class="flex flex-col gap-5">
+                <div class="p-5">
+                    <p class="text-red-600 uppercase text-sm font-bold">Departamentos</p>
+                    <hr class="text-red-600 w-2.5 my-5 border">
+                    <ul class="grid gap-5 grid-cols-2 list-outside text-white">
                         <li><a href="#">Hardware</a></li>
                         <li><a href="#">Periféricos</a></li>
                         <li><a href="#">Computadores</a></li>
@@ -1365,28 +1373,30 @@
                         <li><a href="#">Energético</a></li>
                     </ul>
                 </div>
-                <div>
-                    <p>Baixe os aplicativos</p>
-                    <hr>
-                    <a href="#"><img src="./img/applestore.svg" alt=""></a>
-                    <a href="#"><img src="./img/playstore.svg" alt=""></a>
+                <div class="p-5">
+                    <p class="text-red-600 uppercase text-sm font-bold">Baixe os aplicativos</p>
+                    <hr class="text-red-600 w-2.5 my-5 border">
+                    <div class="flex gap-1">
+                        <a href="#"><img src="./img/applestore.svg" alt=""></a>
+                        <a href="#"><img src="./img/playstore.svg" alt=""></a>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div>
-                    <p>Institucional</p>
-                    <hr>
-                    <ul>
+            <div class="flex flex-col gap-5">
+                <div class="p-5">
+                    <p class="text-red-600 uppercase text-sm font-bold">Institucional</p>
+                    <hr class="text-red-600 w-2.5 my-5 border">
+                    <ul class="flex flex-col text-white gap-5">
                         <li><a href="#">Quem somos</a></li>
                         <li><a href="#">Localização</a></li>
                         <li><a href="#">Nossas Lojas</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
                 </div>
-                <div>
-                    <p>Dúvidas</p>
-                    <hr>
-                    <ul>
+                <div class="p-5">
+                    <p class="text-red-600 uppercase text-sm font-bold">Dúvidas</p>
+                    <hr class="text-red-600 w-2.5 my-5 border">
+                    <ul class="flex flex-col text-white gap-5">
                         <li><a href="#">Entrega</a></li>
                         <li><a href="#">Garantia</a></li>
                         <li><a href="#">Como comprar</a></li>
@@ -1394,10 +1404,10 @@
                         <li><a href="#">Sobre Boletos</a></li>
                     </ul>
                 </div>
-                <div>
-                    <p>Ajuda</p>
-                    <hr>
-                    <ul>
+                <div class="p-5">
+                    <p class="text-red-600 uppercase text-sm font-bold">Ajuda</p>
+                    <hr class="text-red-600 w-2.5 my-5 border">
+                    <ul class="flex flex-col text-white gap-5">
                         <li><a href="#">SAC</a></li>
                         <li><a href="#">Fale conosco</a></li>
                         <li><a href="#">Termos de aceite</a></li>
@@ -1405,35 +1415,36 @@
                     </ul>
                 </div>
             </div>
-            <div>
-                <div>
-                    <p>Newsletter</p>
-                    <hr>
-                    <p>Receba ofertas exclusivas no seu e-mail</p>
-                    <div>
-                        <input type="text">
-                        <a href="#"><i class="ri-arrow-right-long-line"></i></a>
+            <div class="flex flex-col">
+                <div class="p-5">
+                    <p class="text-red-600 uppercase text-sm font-bold">Newsletter</p>
+                    <hr class="text-red-600 w-2.5 my-5 border">
+                    <p class="text-white font-bold">Receba ofertas exclusivas no seu e-mail</p>
+                    <div class="bg-white flex items-center justify-between p-4 py-3 w-[340px]">
+                        <label class="text-neutral-400" for="email">E-mail</label>
+                        <input type="text" name="email" id="email">
+                        <a class="font-bold text-3xl" href="#"><i class="ri-arrow-right-long-line"></i></a>
                     </div>
-                    <div>
-                        <p>Siga-nos nas redes sociais</p>
-                        <div>
-                            <a href="#"><img src="img/facebook.svg" alt=""></a>
-                            <a href="#"><img src="img/instagram.svg" alt=""></a>
-                            <a href="#"><img src="img/twitter.svg" alt=""></a>
-                            <a href="#"><img src="img/youtube.svg" alt=""></a>
+                    <div class="flex items-center py-5 gap-3">
+                        <p class="text-white w-[140px]">Siga-nos nas redes sociais</p>
+                        <div class="flex gap-2">
+                            <a href="#"><i class="ri-facebook-box-fill text-2xl text-red-600 bg-white rounded-full p-2"></i></a>
+                            <a href="#"><i class="ri-instagram-fill text-2xl text-red-600 bg-white rounded-full p-2"></i></a>
+                            <a href="#"><i class="ri-twitter-fill text-2xl text-red-600 bg-white rounded-full p-2"></i></a>
+                            <a href="#"><i class="ri-youtube-fill text-2xl text-red-600 bg-white rounded-full p-2"></i></a>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <p>Pagamento</p>
-                    <hr>
-                    <ul>
-                        <li><img src="img/visa.webp" alt=""></li>
-                        <li><img src="img/mastercard.webp" alt=""></li>
-                        <li><img src="img/american.webp" alt=""></li>
-                        <li><img src="img/boleto.webp" alt=""></li>
-                        <li><img src="img/pix.webp" alt=""></li>
-                        <li><img src="img/nubank.svg" alt=""></li>
+                <div class="p-5 pt-0">
+                    <p class="text-red-600 uppercase text-sm font-bold">Pagamento</p>
+                    <hr class="text-red-600 w-2.5 my-5 border">
+                    <ul class="grid gap-5 grid-cols-2 list-outside items-center">
+                        <li class="flex bg-white p-2 justify-center rounded-md"><img src="img/visa.webp" alt=""></li>
+                        <li class="flex bg-white p-2 justify-center rounded-md"><img src="img/mastercard.webp" alt=""></li>
+                        <li class="flex bg-white p-2 justify-center rounded-md"><img src="img/american.webp" alt=""></li>
+                        <li class="flex bg-white p-2 justify-center rounded-md"><img src="img/boleto.webp" alt=""></li>
+                        <li class="flex bg-white p-2 justify-center rounded-md"><img src="img/pix.webp" alt=""></li>
+                        <li class="flex bg-white p-8 justify-center rounded-md"><img src="img/nubank.svg" alt=""></li>
                     </ul>
                 </div>
             </div>
