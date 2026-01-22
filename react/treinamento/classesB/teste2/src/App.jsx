@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import TodoApp from './assets/components/todoApp'
+import AppTodo from './assets/components/AppTodo'
 
 function App() {
 
   return (
     <>
-      <TodoApp/>
+      <AppTodo/>
     </>
   )
 }
