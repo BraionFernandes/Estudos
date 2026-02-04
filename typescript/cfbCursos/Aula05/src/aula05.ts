@@ -1,4 +1,6 @@
-let cursos=[
+let cursos: (string | number)[];
+
+cursos=[
     "Javascript",
     "Python",
     "Typescript"
