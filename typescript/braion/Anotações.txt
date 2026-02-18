@@ -1,0 +1,15 @@
+17/02/2026
+
+Inicio dos estudos de TypeScript Autodidata;
+
+-------------------
+Para o Dia - 18/02/2026:
+
+Realizar um pequeno codigo que:
+
+*. Registrará um novo usuario em um array(simulação de banco de dados);
+1. Utilizar o esquema de interface para descrever a forma do objeto;
+2. Utilizar o sistema de Classes para a implementação de novo usuario;
+3. Fazer um sistema de exclusão de um usuario expecifico;
+
+-------------------
