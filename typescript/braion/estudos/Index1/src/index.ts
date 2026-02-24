@@ -4,10 +4,13 @@
 //     name: string;
 //     id: number;
 // }
+
 // const user: User={
 //     name: "Braion",
 //     id: 0,
 // };
+
+// console.log(user);
 
 // --------------------------
 
@@ -30,9 +33,13 @@
 
 // console.log(user);
 
-// function deleteUser(user : User){
-//     // ...
+// function deleteUser(user : object){
+    
 // }
+
+// deleteUser(user);
+
+// console.log(user);
 
 // --------------------------------
 
@@ -55,12 +62,12 @@
 
 // --------------------------------
 
-// const obj1:string="braion";
+// const obj1:string="pedro";
 // const obj2:string[]=["braion","tailon","taisler"];
 
 // function wrapInArray(obj: string | string[]){
 //     if(typeof obj === "string"){
-//         return [obj];
+//         return [...obj2, obj];
 //     }
 //     return obj
 // }
@@ -70,3 +77,66 @@
 
 // --------------------------------
 
+// 23/02/2026 !!!!!!!!!!!!!!!!!!!!
+
+// type StringArray = Array<string>;
+// type NumberArray = Array<number>;
+// type ObjectWithNameArray = Array<{ name: string }>;
+
+// const array:ObjectWithNameArray=[];
+
+// array.push({ name: "Braion" });
+// array.push({ name: "Tailon" });
+
+// console.log(array);
+
+//------------------------------------
+
+// interface Backpack<type>{
+//     add: (obj: type) => void;
+//     get: () => type;
+// }
+
+// declare const backpack : Backpack<string>;
+
+// const object = backpack.get();
+
+// backpack.add("Faca");
+// backpack.get()
+
+// -----------------------------
+
+// interface Point{
+//     x: number;
+//     y: number
+// }
+
+// function logPoint(p: Point){
+//     console.log(`${p.x}, ${p.y}`);
+// }
+
+// const point = {x: 12, y: 26};
+// const point2 = {x: 10, y: 20, z: 30}
+
+// logPoint(point);
+// logPoint(point2);
+
+// -------------------------------------
+
+// interface Point{
+//     x: number;
+//     y: number;
+// }
+
+// function logPoint(p: Point){
+//     console.log(`${p.x}, ${p.y}`);
+// }
+
+// const point : Point = {
+//     x: 10,
+//     y: 20
+// }
+
+// logPoint(point);
+
+// --------------------------------------
