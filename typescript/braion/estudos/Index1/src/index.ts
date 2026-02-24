@@ -36,19 +36,37 @@
 
 // --------------------------------
 
-type MyBool = true | false;
+// type MyBool = true | false;
 
-type Carro = "ligado" | "desligado";
-type Janela = "aberta" | "fechada";
+// type Carro = "ligado" | "desligado";
+// type Janela = "aberta" | "fechada";
 
-const Carro:Carro="desligado";
-const Janela:Janela="aberta";
+// const Carro:Carro="desligado";
+// const Janela:Janela="aberta";
 
 //-----------------------------
-const array=["Braion","Tailon","Taisler"];
-function getLength(obj: string | string[]){
-    return obj.length;
-}
+// const array=["Braion","Tailon","Taisler"];
+// function getLength(obj: string | string[]){
+//     return obj.length;
+// }
 
-console.log(getLength("Braion"));
-console.log(getLength(array));
+// console.log(getLength("Braion"));
+// console.log(getLength(array));
+
+// --------------------------------
+
+// const obj1:string="braion";
+// const obj2:string[]=["braion","tailon","taisler"];
+
+// function wrapInArray(obj: string | string[]){
+//     if(typeof obj === "string"){
+//         return [obj];
+//     }
+//     return obj
+// }
+
+// console.log(wrapInArray(obj1));
+// console.log(wrapInArray(obj2));
+
+// --------------------------------
+
