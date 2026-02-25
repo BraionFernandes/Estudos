@@ -97,4 +97,22 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // }
 // logPoint(point);
 // --------------------------------------
+// interface Point{
+//     x: number;
+//     y: number;
+// }
+// function logPoint(p: Point){
+//     console.log(`${p.x}, ${p.y}`);
+// }
+// class VirtualPoint{
+//     x: number;
+//     y: number;
+//     constructor(x:number, y:number){
+//         this.x=x;
+//         this.y=y;
+//     }
+// }
+// const newPoint = new VirtualPoint(10, 20);
+// logPoint(newPoint);
+//------------------------------------
 //# sourceMappingURL=index.js.map
