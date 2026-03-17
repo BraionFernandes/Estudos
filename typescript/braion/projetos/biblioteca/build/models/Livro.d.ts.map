@@ -1,1 +1,1 @@
-{"version":3,"file":"Livro.d.ts","sourceRoot":"","sources":["../../src/models/Livro.ts"],"names":[],"mappings":""}
+{"version":3,"file":"Livro.d.ts","sourceRoot":"","sources":["../../src/models/Livro.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,WAAW,EAAE,MAAM,2BAA2B,CAAC;AACxD,qBAAa,KAAM,YAAW,WAAW;IAG1B,MAAM,EAAC,MAAM;IACb,KAAK,EAAC,MAAM;IACZ,GAAG,EAAC,MAAM;IAJrB,OAAO,CAAC,UAAU,CAAc;gBAErB,MAAM,EAAC,MAAM,EACb,KAAK,EAAC,MAAM,EACZ,GAAG,EAAC,MAAM;IAErB,SAAS;IAQT,QAAQ;IAIR,wBAAwB,IAAG,OAAO;CAGrC"}
