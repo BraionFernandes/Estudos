@@ -1,31 +1,22 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-let dados = [];
-const nome = "Braion";
-const idade = 22;
-const nome1 = "Tailon";
-const idade1 = 28;
-class user {
-    nome;
-    idade;
-    constructor(nome, idade) {
-        this.nome = nome;
-        this.idade = idade;
-    }
-}
-const user1 = new user(nome, idade);
-const user2 = new user(nome1, idade1);
-dados.push(user1);
-dados.push(user2);
-console.log(dados);
-dados.filter(e => e.nome !== "Braion" ? e : null);
-function removeUser(user) {
-    const filterUser = dados.filter(e => e.nome !== user ? e : null);
-    dados = [];
-    dados.push(filterUser);
-}
-removeUser(nome);
-console.log(dados);
-removeUser(nome1);
-console.log(dados);
+const Biblioteca_1 = require("./models/Biblioteca");
+const Livro_1 = require("./models/Livro");
+const Usuario_1 = require("./models/Usuario");
+const biblioteca = new Biblioteca_1.Biblioteca();
+const livro1 = new Livro_1.Livro("O Principe", "Nicolal Maquiavel", 1950);
+const livro2 = new Livro_1.Livro("O Imperio", "Braion F. Reis", 2030);
+biblioteca.adicionarLivro(livro1);
+biblioteca.adicionarLivro(livro2);
+const usuario1 = new Usuario_1.Usuario("Braion", 1);
+const usuario2 = new Usuario_1.Usuario("Tailon", 2);
+biblioteca.listarLivros();
+console.log('-------------');
+usuario1.pegarLivro(livro1);
+usuario2.pegarLivro(livro1);
+usuario1.listarLivros();
+usuario2.listarLivros();
+usuario1.devolverLivro(livro1);
+usuario1.listarLivros();
+usuario2.listarLivros();
 //# sourceMappingURL=index.js.map

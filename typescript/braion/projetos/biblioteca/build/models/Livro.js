@@ -15,14 +15,17 @@ class Livro {
         if (this.disponivel) {
             this.disponivel = false;
             console.log(`O livro: ${this.titulo}, foi emprestado com sucesso!`);
+            console.log('-----------------');
         }
         else {
             console.log(`O livro: ${this.titulo}, não esta disponível!`);
+            console.log('-----------------');
         }
     }
     devolver() {
         this.disponivel = true;
         console.log(`O livro: ${this.titulo}, foi devolvido com sucesso!`);
+        console.log('-----------------');
     }
     verificarDisponibilidade() {
         return this.disponivel;

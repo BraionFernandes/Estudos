@@ -1,36 +1,24 @@
-let dados:any[]=[];
-const nome:string="Braion";
-const idade:number=22;
-const nome1:string="Tailon";
-const idade1:number=28;
+import { Biblioteca } from "./models/Biblioteca";
+import { Livro } from "./models/Livro";
+import { Usuario } from "./models/Usuario";
 
-interface User{
-    nome: string;
-    idade: number;
-}
+const biblioteca = new Biblioteca();
 
-class user{
-    nome:string;
-    idade:number;
+const livro1 = new Livro("O Principe", "Nicolal Maquiavel", 1950);
+const livro2 = new Livro("O Imperio", "Braion F. Reis", 2030);
 
-    constructor(nome: string, idade: number){
-        this.nome=nome;
-        this.idade=idade;
-    }
-}
+biblioteca.adicionarLivro(livro1);
+biblioteca.adicionarLivro(livro2);
 
-const user1:User=new user(nome, idade);
-const user2:User=new user(nome1, idade1);
-dados.push(user1);
-dados.push(user2);
-console.log(dados);
-dados.filter(e => e.nome !== "Braion" ? e : null);
-function removeUser(user:string){
-    const filterUser=dados.filter(e => e.nome !== user ? e : null);
-    dados=[];
-    dados.push(filterUser);
-}
-removeUser(nome);
-console.log(dados);
-removeUser(nome1);
-console.log(dados);
+const usuario1 = new Usuario("Braion",1);
+const usuario2 = new Usuario("Tailon",2);
+
+biblioteca.listarLivros();
+console.log('-------------');
+usuario1.pegarLivro(livro1);
+usuario2.pegarLivro(livro1);
+usuario1.listarLivros();
+usuario2.listarLivros();
+usuario1.devolverLivro(livro1);
+usuario1.listarLivros();
+usuario2.listarLivros();
