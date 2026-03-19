@@ -12,7 +12,7 @@ class Usuario {
     pegarLivro(livro) {
         if (livro.verificarDisponibilidade()) {
             console.log(`Usuario: ${this.nome}`);
-            livro.emprestar();
+            livro.emprestar(7);
             this.LivrosEmprestados.push(livro);
         }
         else {
@@ -21,6 +21,13 @@ class Usuario {
         }
     }
     devolverLivro(livro) {
+        const multa = livro.calcularMulta();
+        if (multa > 0) {
+            console.log(`Multa por atraso: R$ ${multa}`);
+        }
+        else {
+            console.log("Livro devolvido no prazo!");
+        }
         console.log(`Usuario: ${this.nome}`);
         livro.devolver();
         this.LivrosEmprestados = this.LivrosEmprestados.filter(l => l !== livro);
