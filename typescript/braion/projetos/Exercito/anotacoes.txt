@@ -1,0 +1,18 @@
+XP por Patente:
+
+Soldado - 0 a 100;
+cabo - 100 a 1.000;
+1° Sargento - 1.000 a 5.000;
+Aspirante a Oficial - 5.000 a 10.000;
+2° Tenente - 10.000 a 50.000;
+1° Tenente - 50.000 a 150.000;
+Capitão - 150.000 a 500.000;
+Major - 500.000 a 1.000.000;
+Tenente Coronel - 1.000.000 a 5.000.000;
+Coronel - 5.000.000 a 10.000.000;
+General de Brigada - 10.000.000 a 50.000.000;
+General de Divisão - 50.000.000 a 250.000.000;
+General de Exercito Tier 3 - 250.000.000 a 500.000.000;
+General de Exercito Tier 2 - 500.000.000 a 750.000.000;
+General de Exercito Tier 1 - 750.000.000 a 1.000.000.000;
+Marechal - 1.000.000.000;

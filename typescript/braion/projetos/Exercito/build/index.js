@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Integrante_1 = require("./models/Integrante");
+const integrante1 = new Integrante_1.Integrante("Braion F. Reis", 1);
+integrante1.exibirInfo();
+integrante1.adicionarExperiencia(500);
+integrante1.exibirInfo();
+integrante1.adicionarExperiencia(5500);
+integrante1.exibirInfo();
+integrante1.adicionarExperiencia(41000);
+integrante1.exibirInfo();
+integrante1.adicionarExperiencia(510000);
+integrante1.exibirInfo();
+integrante1.adicionarExperiencia(5000000);
+integrante1.exibirInfo();
+integrante1.adicionarExperiencia(250000000);
+integrante1.exibirInfo();
+integrante1.adicionarExperiencia(810000000);
+integrante1.exibirInfo();
+//# sourceMappingURL=index.js.map

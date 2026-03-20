@@ -1,0 +1,1 @@
+{"version":3,"file":"Integrante.d.ts","sourceRoot":"","sources":["../../src/models/Integrante.ts"],"names":[],"mappings":"AAAA,qBAAa,UAAU;IAIR,IAAI,EAAE,MAAM;IACZ,EAAE,EAAE,MAAM;IAJrB,OAAO,CAAC,OAAO,CAAkB;IACjC,OAAO,CAAC,WAAW,CAAU;gBAElB,IAAI,EAAE,MAAM,EACZ,EAAE,EAAE,MAAM;IAErB,OAAO,CAAC,QAAQ,CAiBd;IACF,oBAAoB,CAAC,KAAK,EAAC,MAAM;IAKjC,OAAO,CAAC,gBAAgB;IASxB,UAAU;CAUb"}
