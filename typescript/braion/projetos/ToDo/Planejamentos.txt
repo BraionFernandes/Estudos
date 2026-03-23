@@ -1,0 +1,10 @@
+Projeto To Do Full Typescript + Node.js;
+
+Funções que precisa ter:
+
+Criação da tarefa;
+Armazenamento da tarefa;
+Exclusão da tarefa;
+
+Edição de elementos da tarefa;
+Filtragem da tarefa;
