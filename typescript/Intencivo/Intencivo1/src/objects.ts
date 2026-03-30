@@ -9,6 +9,7 @@ type User={
     email:string
     password?:string
     orders: Order[]
+    register(): string
 };
 
 const user: User={
@@ -16,7 +17,10 @@ const user: User={
     age: 22,
     email: 'braionfernandes8@gmail.com',
     password: 'Br346595@',
-    orders: [{ productId: '1', price: 10}]
+    orders: [{ productId: '1', price: 10}],
+    register(){
+        return 'a';
+    }
 };
 
 const log = (message:string)=>{};
@@ -42,21 +46,35 @@ const author: Author & User = {
     email: 'Tailonfernandes0@gmail.com',
     password: 't2811887',
     orders: [],
-    books: ['Uma Era', 'Caminho das sombras']
-}
+    books: ['Uma Era', 'Caminho das sombras'],
+    register(){
+        return 'a';
+    }
+};
 
 // Interfaces
 
 interface UserInterface{
-    firstName: string,
-    email: string
+    firstName: string;
+    email: string;
 }
 
 const emailUser: UserInterface={
     firstName: 'Braion',
     email: 'braion@gmmail.com'
-}
+};
+
+interface AuthorInterface{
+    books: string[];
+};
+
+const newAuthor: UserInterface & AuthorInterface={
+    email: "braion@gmail.com",
+    firstName: "Braion",
+    books: [],
+};
 
 type Grade = number | string;
 
-const grade: Grade = 1
+const grade: Grade = 1;
+

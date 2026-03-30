@@ -1,9 +1,17 @@
-const sun=(x:number,y:number):number=>{
+interface MathFunc{
+    (x:number, y:number): number;
+}
+
+const sum: MathFunc=(x:number,y:number):number=>{
     return x + y;
 };
 
-const value = sun(2, 3);
+const value = sum(2, 3);
 
 const log=(message:string):void=>{
     console.log(message);
-}
+};
+
+const sub: MathFunc = (x:number, y:number)=>{
+    return x - y;
+};
