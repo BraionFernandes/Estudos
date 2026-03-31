@@ -13,8 +13,5 @@ class Cursos implements BaseCurso{
         public professor:string,
         public numAulas:number,
         public duracao:number
-
     ){};
-
-    
 }
