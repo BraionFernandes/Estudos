@@ -9,3 +9,7 @@ const Pessoa1=new Pessoa(
 );
 
 Pessoa1.info();
+Pessoa1.mudarPatrimonio(722);
+Pessoa1.mudarEmail("braionfernandes8@gmail.com");
+Pessoa1.mudarPeso(82);
+Pessoa1.info();
