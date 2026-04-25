@@ -5,9 +5,9 @@ var Veiculos;
     class Carro {
         nome;
         motor;
-        constructor(nome) {
+        constructor(nome, potMotor) {
             this.nome = nome;
-            this.motor = new Motores.Motor(100);
+            this.motor = new Motores.Motor(potMotor);
         }
     }
     Veiculos.Carro = Carro;
@@ -21,12 +21,13 @@ var Motores;
         }
     }
     class Motor {
-        pot;
-        constructor(pot) {
-            this.pot = pot;
+        potencia;
+        constructor(potencia) {
+            this.potencia = potencia;
         }
     }
     Motores.Motor = Motor;
 })(Motores || (Motores = {}));
-const c1 = new Veiculos.Carro("Rapid");
+const c1 = new Veiculos.Carro("Ford GT", 450);
+console.log(c1.nome);
 //# sourceMappingURL=index.js.map
