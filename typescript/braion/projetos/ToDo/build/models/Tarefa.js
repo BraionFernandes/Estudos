@@ -2,15 +2,19 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Tarefa = void 0;
 class Tarefa {
-    nomeTarefa;
+    nome;
+    descricao;
     id;
-    constructor(nomeTarefa) {
-        this.nomeTarefa = nomeTarefa;
-        this.id = this.geradorId();
+    constructor(nome, descricao) {
+        this.nome = nome;
+        this.descricao = descricao;
+        this.id = Date.now();
     }
-    geradorId() {
-        const id = Date.now();
-        return id;
+    editarTarefaNome(newNome) {
+        this.nome = newNome;
+    }
+    editarTarefaDescricao(newDescricao) {
+        this.descricao = newDescricao;
     }
 }
 exports.Tarefa = Tarefa;

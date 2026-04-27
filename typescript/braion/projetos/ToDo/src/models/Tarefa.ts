@@ -1,12 +1,18 @@
-export class Tarefa{
-    protected nomeTarefa:string;
-    protected id:number;
-    constructor(nomeTarefa:string){
-            this.nomeTarefa=nomeTarefa;
-            this.id=this.geradorId();
+import { Editor } from "../interfaces/Editor";
+export class Tarefa implements Editor{
+    public nome:string;
+    public descricao:string;
+    private id:number;
+
+    constructor(nome:string,descricao:string){
+        this.nome=nome;
+        this.descricao=descricao;
+        this.id=Date.now();
     }
-    private geradorId():number{
-        const id=Date.now();
-        return id;
+    editarTarefaNome(newNome:string){
+        this.nome=newNome;
+    }
+    editarTarefaDescricao(newDescricao:string){
+        this.descricao=newDescricao;
     }
 }
