@@ -1,0 +1,1 @@
+{"version":3,"file":"Transportadora.d.ts","sourceRoot":"","sources":["../../src/models/Transportadora.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,WAAW,CAAC;AAEpC,qBAAa,cAAc;IACvB,KAAK,EAAC,OAAO,EAAE,CAAI;IAEnB,gBAAgB,CAAC,OAAO,EAAC,OAAO;IAuBhC,cAAc,CAAC,OAAO,EAAC,OAAO;CAWjC"}
