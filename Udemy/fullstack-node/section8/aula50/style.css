@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #929292;
+}
+.container{
+    background-color: #fff;
+    margin: 50px;
+    padding: 20px;
+}
+.cabecario{
+    font-size: 2.5em;
+    color: purple;
+}
+.codigo{
+    padding-top: 35px;
+    color: #727272;
+    font-size: 1.3em;
+}
+.image-container{
+    display: flex;
+    padding: 20px 0 20px 0;
+}
+.image-container > img{
+    width: 800px;
+}
+.components{
+    padding: 0 0 20px 50px;
+}
+.components p{
+    font-weight: 600;
+    font-size: 1.8em;
+    padding: 8px;
+}
+.components ul{
+    font-size: 1.2em;
+    padding: 5px;
+}
+.components li{
+    padding: 2px;
+}
+.descricao{
+    width: 80%;
+}
+.descricao p{
+    padding: 15px;
+    font-weight: 300;
+    font-size: 1.3em;
+}
