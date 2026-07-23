@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer - Aula 66</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: darkred;
+        }
+
+        body > div{
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            padding: 50px;
+            border-radius: 20px;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 2em;
+            font-weight: 800;
+        }
+
+        #timer{
+            font-weight: bold;
+            font-size: 4em;
+            text-align: center;
+            padding: 20px;
+            padding-bottom: 35px;
+        }
+
+        .divButtons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        button{
+            width: 120px;
+            font-size: 1em;
+            font-weight: 600;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            background-color: darkred;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Meu Timer</h1>
+        <span id="timer">00:00:00</span>
+        <div class="divButtons">
+            <button id="btnIniciar">Iniciar</button>
+            <button id="btnPausar">Pausar</button>
+            <button id="btnZerar">Zerar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
