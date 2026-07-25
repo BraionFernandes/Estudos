@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 67 - Lista de Tarefas</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: darkred;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container{
+            background-color: #fff;
+            width: 800px;
+            height: 500px;
+            padding: 25px;
+            border-radius: 25px;
+        }
+
+        .titulo{
+            font-size: 2.5em;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px;
+            margin-bottom: 40px;
+        }
+
+        .addTarefa{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .caixaTexto{
+            width: 250px;
+            padding: 5px;
+            border: none;
+            background-color: rgba(128, 128, 128, 0.623);
+            border-radius: 5px;
+            outline: none;
+            font-weight: 600;
+        }
+
+        .btnAdicionar{
+            width: 120px;
+            padding: 5px;
+            border: none;
+            background-color: darkred;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .elementos{
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">Lista de Tarefas</h1>
+        <div class="addTarefa">
+            <input class="caixaTexto" type="text" name="" id="">
+            <button class="btnAdicionar">Adicionar tarefa</button>
+        </div>
+        <div class="elementos">
+            <div class="elemento">
+                <span class="elemento-text">Teste</span>
+                <button class="elemento-btnDelet">Apagar</button>
+            </div>
+            <div class="elemento">
+                <span class="elemento-text">Teste</span>
+                <button class="elemento-btnDelet">Apagar</button>
+            </div>
+            <div class="elemento">
+                <span class="elemento-text">Teste</span>
+                <button class="elemento-btnDelet">Apagar</button>
+            </div>
+            <div class="elemento">
+                <span class="elemento-text">Teste</span>
+                <button class="elemento-btnDelet">Apagar</button>
+            </div>
+            <div class="elemento">
+                <span class="elemento-text">Teste</span>
+                <button class="elemento-btnDelet">Apagar</button>
+            </div>
+            <div class="elemento">
+                <span class="elemento-text">Teste</span>
+                <button class="elemento-btnDelet">Apagar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
