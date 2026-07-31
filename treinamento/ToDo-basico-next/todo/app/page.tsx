@@ -1,3 +1,5 @@
+import Criador from "./components/Criador/Criador";
+
 export default function Home() {
   return (
     <div className="bg-red-950 w-screen h-screen flex justify-center items-center">
@@ -10,10 +12,7 @@ export default function Home() {
           </div>
 
           <div className="p-5">
-            <form className="flex gap-3">
-              <input className="bg-gray-300 p-1 rounded-md outline-none font-bold text-lg" type="text" name="tarefaNome" id="tarefaNome"/>
-              <input className="bg-red-800 p-1 px-2 rounded-md text-white font-bold text-lg" type="submit" value="Criar Tarefa" />
-            </form>
+            <Criador/>
           </div>
 
         </div>
