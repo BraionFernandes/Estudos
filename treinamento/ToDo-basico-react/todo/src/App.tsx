@@ -1,6 +1,15 @@
-import Criador from "./components/Criador/Criador";
+import { useState } from 'react';
+import './App.css';
+import Criador from './components/criador/criador';
 
-export default function Home() {
+export interface Tarefa{
+  id:number;
+  text:string;
+}
+
+function App() {
+  const [dados, setDados]=useState<Tarefa[]>([]);
+
   return (
     <div className="bg-red-950 w-screen h-screen flex justify-center items-center">
       <div className="bg-white w-225 h-175 rounded-4xl">
@@ -12,7 +21,7 @@ export default function Home() {
           </div>
 
           <div className="p-5">
-            <Criador/>
+            <Criador setDados={setDados}/>
           </div>
 
         </div>
@@ -46,5 +55,7 @@ export default function Home() {
 
       </div>
     </div>
-  );
+  )
 }
+
+export default App
