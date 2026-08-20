@@ -1,7 +1,12 @@
-let novoUsuario:Object;
+// Type ENUM
 
-novoUsuario={
-    user: "Braionkuro01",
-    email: "braionkuro01@gmail.com"
+enum DesignColors{
+    white="#FFF",
+    black="#000"
 }
 
+enum StatusPermission{
+    ADMIN,
+    USER,
+    SUPPORT
+}
